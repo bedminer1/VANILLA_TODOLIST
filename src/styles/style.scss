@@ -1,0 +1,60 @@
+@mixin centerFlex{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+.task-table {
+    border: solid 5px blue;
+    width: 70%;
+    height: 100vh;
+
+    table {
+        margin-top: 20px;
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            border: 3px orange solid;
+            width: 20%;
+        }
+    }
+}
+
+.sidebar {
+    border: solid 5px black;
+    width: 30%;
+    height: 100vh;
+    left: 0;
+    @include centerFlex();
+    flex-direction: column;
+    
+}
+
+.new-task {
+    @extend .project;
+    border: blue;
+}
+
+.project {
+    border: solid 5px red;
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+
+.new-task-page {
+    height: 20%;
+    width: 20%;
+    border: 15px green solid;
+    @include centerFlex()
+}

@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+.task-table {
+  border: solid 5px blue;
+  width: 70%;
+  height: 100vh;
+}
+.task-table table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.task-table table th {
+  border: 3px orange solid;
+  width: 20%;
+}
+
+.sidebar {
+  border: solid 5px black;
+  width: 30%;
+  height: 100vh;
+  left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-task {
+  border: blue;
+}
+
+.project, .new-task {
+  border: solid 5px red;
+  width: 250px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.new-task-page {
+  height: 20%;
+  width: 20%;
+  border: 15px green solid;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
